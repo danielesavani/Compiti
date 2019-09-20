@@ -3,7 +3,7 @@ package maratona;
 public class Maratona {
 
     private String nome, cognome, nazione;
-
+    private Tempo t;
     public Maratona(String nome, String cognome, String nazione) {
 
         if (nome.isEmpty() || nome == null) {
