@@ -18,6 +18,7 @@ public class UsaMaratona {
             c = Lettore.in.leggiString();
             System.out.println("Inserisci nazione");
             nz = Lettore.in.leggiString();
+            Tempo t= InserimentoTempo();
             a[i] = new Maratona(nom, c, nz);
         }
     }
