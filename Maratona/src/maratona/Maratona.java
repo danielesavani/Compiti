@@ -68,4 +68,16 @@ public class Maratona {
             nazione = nz;
         }
     }
+    
+    @Override
+    public String toString(){
+        String a=" ";
+         a="Nome: "+  this.nome + "Cognome: " + this.cognome + "Nazione: " + this.nazione;
+         return a;
+    }
+    
+    @Override
+    public boolean equals(Object a) {
+        
+    }
 }
