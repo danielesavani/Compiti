@@ -44,26 +44,42 @@ public class Tempo {
     public int getSecondi() {
         return secondi;
     }
-    
-    public void setOre(int ore){
-        if(ore>=0){
-           this ore=ore;
+
+    public void setOre(int ore) {
+        if (ore >= 0) {
+            this.ore = ore;
         }
     }
-    
-    public void setMinuti(int minuti){
-        if(minuti >= 0 && minuti < 60){
-            this.minuti=minuti;
+
+    public void setMinuti(int minuti) {
+        if (minuti >= 0 && minuti < 60) {
+            this.minuti = minuti;
         }
     }
-    
-    public void setSecondi(int secondo){
-        if(secondi >= 0 && secondi < 60){
-            this.secondi= secondi;
+
+    public void setSecondi(int secondo) {
+        if (secondi >= 0 && secondi < 60) {
+            this.secondi = secondi;
         }
     }
-    
-    public String toString(){
-        
+
+    @Override
+    public String toString() {
+        String ris = "";
+        if (secondi < 10) {
+            ris = ":0" + secondi;
+        } else {
+            if (minuti < 10) {
+                ris = ":0" + minuti + ris;
+            } else {
+                ris = ":0" + minuti + ris;
+            }
+            if (ore < 10) {
+                ris = "0" + ore + ris;
+            } else {
+                ris = ore + ris;
+            }
+        }
+        return ris;
     }
 }

@@ -4,7 +4,8 @@ public class Maratona {
 
     private String nome, cognome, nazione;
     private Tempo t;
-    public Maratona(String nome, String cognome, String nazione) {
+
+    public Maratona(String nome, String cognome, String nazione, Tempo t) {
 
         if (nome.isEmpty() || nome == null) {
             this.nome = "sconoscito";
@@ -23,22 +24,25 @@ public class Maratona {
         } else {
             this.nazione = nazione;
         }
-
     }
-    
-    public String getNome(){
+
+    public String getNome() {
         return nome;
     }
-    
-    public String getCognome(){
+
+    public String getCognome() {
         return cognome;
     }
-    
-    public String getNazione(){
+
+    public String getNazione() {
         return nazione;
     }
-    
-    public void seNome(String n) {
+
+    public Tempo getTempo() {
+        return t;
+    }
+
+    public void setNome(String n) {
 
         if (n.isEmpty() || n == null) {
             nome = "Sconosciuto";
@@ -46,7 +50,7 @@ public class Maratona {
             nome = n;
         }
     }
-    
+
     public void setCognome(String c) {
 
         if (c.isEmpty() || c == null) {
@@ -55,7 +59,7 @@ public class Maratona {
             cognome = c;
         }
     }
-    
+
     public void setNazione(String nz) {
 
         if (nz.isEmpty() || nz == null) {

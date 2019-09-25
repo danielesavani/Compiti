@@ -18,7 +18,6 @@ public class UsaMaratona {
             c = Lettore.in.leggiString();
             System.out.println("Inserisci nazione");
             nz = Lettore.in.leggiString();
-            Tempo t= InserimentoTempo();
             a[i] = new Maratona(nom, c, nz);
         }
     }
@@ -70,7 +69,7 @@ public class UsaMaratona {
 
             switch (scelta) {
                 case 1: {
-                    System.out.println(MediaTempi(a));
+                    System.out.println();
                 }
                 
                 case 2: {
