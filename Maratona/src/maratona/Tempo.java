@@ -82,4 +82,30 @@ public class Tempo {
         }
         return ris;
     }
+
+    @Override
+    public boolean equals(Object x) {
+        boolean ris = false;
+        if (x instanceof Tempo) {
+            Tempo x1 = (Tempo) x;
+            if (this.ore == x1.ore && this.minuti == x1.minuti && this.secondi == x1.secondi) {
+                ris = true;
+
+            }
+        }
+        return ris;
+    }
+
+    public int TrasformaInSecondi() {
+        int x = this.ore * 3600 + this.minuti * 60 + this.secondi;
+        return x;
+    }
+
+    public Tempo SecondiInTempo(int x) {
+        Tempo app = new Tempo(ore, minuti, secondi);
+        app.ore = x / 3600;
+        app.minuti = x - (ore * 3600) / 60;
+        app.secondi = x - (ore * 3600) - (minuti * 60);
+        return app;
+    }
 }
