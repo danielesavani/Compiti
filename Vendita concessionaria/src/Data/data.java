@@ -17,6 +17,22 @@ public class data {
     public data(int giorno, int mese, int anno){
         if(giorno<1 || giorno>31 && mese<1 || mese>12){
             System.out.println("Data non valida" ) ;
+        }else{
+            giorno=giorno;
+            mese=mese;
+            anno=anno;
         }
+    }
+    
+    public int getGiorno(){
+        return giorno;
+    }
+    
+    public int getMese(){
+        return mese;
+    }
+    
+    public int getAnno(){
+        return anno;
     }
 }

@@ -39,4 +39,13 @@ public class cliente {
         }      
     }
     
+    public String toString(){
+        String a;
+        a= "Nome: " + Nome + "\n"
+                + "Cognome: " + Cognome + "\n"
+                + "Email: " + Email + "\n"
+                + "Codice fiscale: " + codFiscale +"\n";
+        return a;
+    }
+    
 }
