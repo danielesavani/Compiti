@@ -29,24 +29,24 @@ public class vendita {
         if(Cliente==null){
             Cliente=new cliente("Sconoscito", "Sconoscito", "Sconoscito", "Sconoscito");
         }else{
-            Cliente=Cliente;
+            Cliente=new Cliente(cliente);
         }
         if(Auto==null){
             Auto= new auto("Sconoscito", "Sconoscito", "Sconoscito");
         }else{
-            Auto=Auto;
+            Auto=new Auto(Auto);
         }
         if(Data==null){
             Data= new data(1,1,1900);
         }else{
-            Data=Data;
+            Data=new Data(Data);
         }
         
-        if(np<0){
-            np=0;
-        }else{
-            np=np;
-        }
+        np=++conta;
+
+        
+
+
     }
     
     public vendita(vendita vendita){
